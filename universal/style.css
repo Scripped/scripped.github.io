@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #ffe7e7;
+    font-family: 'Press Start 2P', cursive;
+}
+
+a {
+    color: #ff6767;
+    text-decoration: none;
+}
+
+.main {
+    height: 100%;
+}
+
+.textdiv {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.sideimage {
+    height: 100%;
+    width: 50%;
+    float: right;
+    transition: 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box h2 {
+    margin-top: 50px;
+}
+
+.box h1 {
+    background-color: #ff6767;
+    height: 60px;
+    margin-top: -6px;
+    width: 101%;
+    margin-left: -2px;
+    line-height: 60px;
+    color: #fff;
+    text-shadow: #ffe7e7 0px 0px 3px;
+}
+
+.box {
+    transition: 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 170px;
+    margin-left: 80px;
+    border: #ff6767 6px solid;
+    background-color: #fff;
+    height: 300px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin-left: 80px;
+}
+
+::selection {
+    background-color: #ff6767;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .sideimage {
+        display: none;
+    }
+
+    .textdiv {
+        width: 100%;
+    }
+
+    .box {
+        margin-left: 0px;
+        margin-top: 200px;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box h1 {
+        font-size: 8vw;
+        background-color: transparent;
+        line-height: 0px;
+        color: tomato;
+        height: 0px;
+        margin-top: 0px;
+    }
+
+    .box h2 {
+        font-size: 5vw;
+    }
+    
+
+    .footer {
+        margin-top: 500px;
+        margin-left: 0px;
+    }
+}
