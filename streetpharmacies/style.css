@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+
+body {
+    background-color:  #5c5c5c;
+    color: tomato;
+    text-shadow: red 0 0 4px;
+    overflow: hidden;
+    font-family: 'Nova Flat', cursive;
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-color: #4d0066;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+
+a {
+    text-decoration: none;
+    text-shadow: greenyellow 0 0 4px;
+    color: yellow;
+}
+
+
+::selection {
+    background-color: grey;
+}
+
+
+.leaves img {
+    margin-top: -1050px;
+    pointer-events: none;
+}
+
+.sideimage {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: -250px;
+}
+
+.sideimage img {
+    margin-top: -100px;
+}
+
+.textdiv {
+    width: 50%;
+    height: 100%;
+    margin-top: 200px;
+}
+
+h1, h2, h3 {
+    margin-left: 60px;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+.nav a {
+    font-size: 2vw;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+    margin-left: 20px;
+}
+
+.nav a:nth-child(3) {
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    .sideimage {
+        display: none;
+    }
+
+    .textdiv {
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .leaves {
+        display: none;
+    }
+
+    .background {
+        display: none;
+    }
+
+    body {
+        background-color: #4d0066;
+    }
+
+    h1 {
+        font-size: 14vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+    h2 {
+        font-size: 7vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .nav a {
+        font-size: 6vw;
+    }
+}
