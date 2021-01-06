@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+body {
+    font-family: 'Cute Font', cursive;
+    background-color: rgb(255, 185, 185);
+}
+
+.sideimage {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.sideimage img {
+    margin-top: 110px;
+    transform: scale(2);
+}
+
+.textdiv {
+    width: 50%;
+    height: 100%;
+}
+
+.textdiv h1 {
+    font-size: 7vw;
+    margin-left: 30px;
+}
+
+.textdiv h2 {
+    font-size: 4vw;
+    margin-left: 30px;
+}
+
+.nav a {
+    font-size: 4vw;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+}
+
+.nav a:nth-child(3) {
+    float: right;
+    margin-right: 20px;
+}
+
+a:hover {
+    background-color: rgb(255, 128, 128);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+::selection {
+    background-color: rgb(255, 185, 185);
+}
+
+
+img::selection {
+    background-color: transparent;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 3vw;
+}
+
+.footer a {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+    .nav a {
+        font-size: 13vw;
+    }
+
+    .sideimage {
+        width: 100%;
+        display: none;
+    }
+
+    .textdiv h1 {
+        font-size: 19vw;
+        margin-left: 0px;
+    }
+
+    .textdiv h2 {
+        margin-left: 0px;
+        font-size: 10vw;
+    }
+
+    .textdiv {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .footer h2 {
+        font-size: 9vw;
+    }
+
+    .footer a {
+        font-size: 9vw;
+    }
+
+}
