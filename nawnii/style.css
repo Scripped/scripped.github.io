@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    min-height: 100%;
+    background: no-repeat;
+    background: linear-gradient(#3366ff, #e6ecff);
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    pointer-events: none;
+    transition-duration: 2s;
+}
+
+img::selection {
+    background-color: none;
+}
+
+.sideimage img{
+    transform: scale(0.6);
+    margin-left: -150px;
+    pointer-events: none;
+}
+
+.sideimage {
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.textdiv {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: -1090px;
+}
+
+.main {
+    margin-top: -190px;
+}
+
+.textdiv h1 {
+    margin-left: -200px;
+    font-size: 6vw;
+    transition-duration: 2s;
+}
+
+.textdiv h2 {
+    margin-left: -200px;
+    font-size: 4vw;
+    transition-duration: 3s;
+}
+
+.footer {
+    text-align: center;
+    margin-top: -230px;
+}
+
+.footer h2 {
+    font-size: 2vw;
+}
+
+.footer a {
+    font-size: 1.3vw;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a {
+    font-size: 2vw;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav a:nth-child(3) {
+    float: right;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sideimage {
+        display: none;
+    }
+
+    .nav a:nth-child(2) {
+        float: none;
+        margin-right: 0px;
+    }
+
+    .nav a:nth-child(3) {
+        float: none;
+        margin-right: 0px;
+    }
+
+    .nav a {
+        font-size: 6vw;
+        margin-left: 24px;
+    }
+
+    .textdiv h1{
+        margin-left: 0px;
+        font-size: 13vw;
+    }
+
+    .textdiv h2 {
+        margin-left: 0px;
+        font-size: 7vw;
+    }
+
+    .main {
+        margin-top: 0px;
+    }
+
+    .textdiv {
+        margin-top: 0px;
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .footer {
+        margin-top: 0px;
+    }
+
+    .footer h2 {
+        font-size: 6vw;
+    }
+
+    .footer a {
+        font-size: 4vw;
+    }
+
+}
