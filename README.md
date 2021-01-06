@@ -9,3 +9,4 @@ these are all my websites.
 4. <a href="https://scripped.github.io/disasters/">DI$ASTER$ fan website </a> - fan website of a roblox group.
 5. <a href="https://scripped.github.io/streetpharmacies/">STREET PHARMACIES fan website </a> - fan website of a roblox group.
 6. <a href="https://scripped.github.io/typh/">CrispyTyph fan website </a> - fan website of an animator/artist.
+7. <a href="https://scripped.github.io/cupidsbow/">CUPIDSBOW fan website </a> - fan website of a roblox clothing designer.
