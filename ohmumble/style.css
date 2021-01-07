@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+
+html {
+    background: no-repeat;
+    min-height: 100%;
+    background: linear-gradient(#ffe6ff, #ff9999);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.sideimage {
+    float: right;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sideimage img {
+    transform: scale(2);
+    margin-left: 0px;
+    margin-top: -370px;
+}
+
+
+::selection {
+    background-color: #ff9999;
+}
+
+.sideimage img::selection {
+    background-color: transparent;
+}
+
+.textdiv {
+    height: 100%;
+    width: 50%;
+}
+
+.textdiv h1 {
+    font-size: 6vw;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+a::selection {
+    color: #fff;
+}
+
+
+.textdiv h2 {
+    font-size: 2.4vw;
+    margin-left: 40px;
+}
+
+.text {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+a {
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: tomato;
+    color: #fff;
+}
+
+.nav a {
+    font-size: 2vw;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+}
+
+.footer h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 1.4vw;
+    color: #fff;
+    margin-left: 120px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .nav a {
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+
+    .sideimage {
+        display: none;
+    }
+
+    .text {
+        background-color: transparent;
+        margin-left: 0px;
+    }
+
+
+    .textdiv {
+        height: 100%;
+        width: 100%;
+        margin-top: 90px;
+    }
+    
+    .textdiv h1 {
+        font-size: 15vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .textdiv h2 {
+        font-size: 7vw;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer h2 {
+        font-size: 5vw;
+    }
+
+    .footer a {
+        font-size: 4vw;
+        margin-left: 0px;
+    }
+
+    
+    
+
+}
