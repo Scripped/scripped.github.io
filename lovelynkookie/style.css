@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    background-color: black;
+    color: #fff;
+    text-shadow: blueviolet 0 0 4px;
+    font-family: 'Space Mono', monospace;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sideimage {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.sideimage img {
+    margin-left: 100px;
+    margin-top: 90px;
+    filter: drop-shadow(blueviolet 0 0 4px);
+}
+
+
+.textdiv {
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.textdiv h1, h2, h3 {
+    margin-left: 90px;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+.sideimage img {
+    pointer-events: none;
+    margin-top: 130px;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    color: #f2ccff;
+}
+
+a {
+    color:  #f2ccff;
+    text-decoration: none;
+}
+
+.nav a {
+    font-size: 2vw;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+}
+
+.nav a:nth-child(3) {
+    float: right;
+    margin-right: 20px;
+}
+
+::selection {
+    background-color: #f2ccff;
+}
+
+.sideimage img {
+    transform: scale(2);
+}
+
+img::selection {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 12vw;
+    }
+
+    .textdiv {
+        width: 100%;
+    }
+
+    .sideimage {
+        width: 100%;
+        display: none;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .textdiv h1, h2, h3 {
+        margin-left: 0px;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 5vw;
+    }
+}
