@@ -16,3 +16,4 @@ these are all my websites.
 11. <a target="_blank" href="https://scripped.github.io/iconicxiann/"> IconicXiann fan website </a> - fan website of a roblox youtuber (same design as the disasters one because i didn't submit that one after the roblox fiasco).
 12. <a target="_blank" href="https://scripped.github.io/dyarikku/">DyaRikku fan website </a> - fan website of a VTuber.
 13. <a target="_blank" href="https://scripped.github.io/thepinkshedric/">ThePinkShedric fan website </a> - fan website of a youtuber.
+14. <a target="_blank" href="https://scripped.github.io/ayuuchii/">AyuuChii fan website </a> - fan website of a VTuber.
