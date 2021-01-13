@@ -17,4 +17,4 @@ these are all my websites.
 12. <a target="_blank" href="https://scripped.github.io/dyarikku/">DyaRikku fan website </a> - fan website of a VTuber.
 13. <a target="_blank" href="https://scripped.github.io/thepinkshedric/">ThePinkShedric fan website </a> - fan website of a youtuber.
 14. <a target="_blank" href="https://scripped.github.io/ayuuchii/">AyuuChii fan website </a> - fan website of a VTuber.
-15. <a target="_blank" href="https://scripped.github.io/lovelynkookie/">LovelynKookie fan website </a> - fan website of a twitter user.
+15. <a target="_blank" href="https://github.com/scripped">LovelynKookie fan website </a> - fan website of a twitter user (CLOSED DOWN).
