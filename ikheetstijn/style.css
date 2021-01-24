@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Work+Sans&display=swap');
+
+body {
+    background-color: #0038a8;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: #ffff;
+}
+
+.background1 {
+    background-color: #0042c5;
+    height: 75%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.background2 {
+    background-color: #0051f3;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.background3 {
+    background-color: #397bfd;
+    height: 25%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main h1 {
+    font-size: 6vw;
+}
+
+.main h2 {
+    font-size: 3vw;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+@media screen and (max-width: 700px) {
+    .main h1 {
+        font-size: 13vw;
+    }
+
+    .main h2 {
+        font-size: 6vw;
+    }
+}
