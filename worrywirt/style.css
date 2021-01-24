@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    background-color: #f70755;
+    text-align: center;
+    color: #fff;
+}
+
+img {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main h1 {
+    font-size: 5vw;
+    font-family: 'Hanalei', cursive;
+}
+
+.main h2 {
+    font-size: 3vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.footer h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none; 
+    font-family: 'Comfortaa', cursive;
+}
+
+.nav a {
+    font-size: 2vw;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav a:nth-child(2) {
+    float: right;
+}
+
+@media screen and (max-width: 700px) {
+    .main h1 {
+        font-size: 13vw;
+    }
+
+    .main h2 {
+        font-size: 11vw;
+    }
+
+    .nav a {
+        font-size: 10vw;
+    }
+}
