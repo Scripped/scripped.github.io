@@ -47,6 +47,18 @@ a {
     display: none;
 }
 
+.footer {
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
 @media screen and (max-width: 700px) {
     .textdiv {
         margin-left: 0px;
@@ -72,5 +84,9 @@ a {
         display: block;
         max-width: 100%;
         height: auto;
+    }
+
+    footer {
+        position: relative;
     }
 }
