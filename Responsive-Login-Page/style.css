@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.half-background {
+    z-index: -1;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a {
+    padding: 10px;
+    font-size: 1.4em;
+    display: inline-block;
+}
+
+.nav a:not(:first-child) {
+    float: right;
+}
+
+
+.right-design {
+    float: right;
+    width: 50%;
+    z-index: -1;
+}
+
+
+.left-design {
+    margin-left: 40px;
+}
+
+
+.left-design h1 {
+    font-size: 5em;
+    margin-block-end: 0;
+}
+
+.left-design h2 {
+    font-size: 2em;
+}
+
+
+.login input {
+    width: 40%;
+    height: 50px;
+    border-radius: 60px;
+    border: 2px solid #FFC000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.login img {
+    margin-left: -52px;
+    margin-bottom: -15px;
+    cursor: pointer;
+}
+
+.login button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 40px;
+    width: 10%;
+    height: 40px;
+    background-color: #FFC000;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: #FFC000;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .right-design {
+        display: none;
+    }
+
+    .half-background {
+        display: none;
+    }
+
+    .login input {
+        width: 100%;
+    }
+
+    .login button {
+        width: 60%;
+        margin: auto;
+        background-color: #fff;
+    }
+
+    .left-design {
+        margin-left: 0px;
+    }
+}

@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Template | Scripped</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="half-background">
+        <img src="SideShape.png" alt="">
+    </div>
+    <div class="nav">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+    </div>
+    <main>
+        <div class="right-design">
+            <img src="BikeIcon.svg" alt="">
+        </div>
+        <div class="left-design">
+            <h1>Lorem Ipsum</h1>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <div class="login">
+                <form action="#">
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" id="username" placeholder="Username"> <br>
 
+                    <label for="password">Password</label> <br>
+                    <div class="password-div">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <img src="EyeIcon.png" onclick="showpassword()" class="eye" alt="">
+                    </div> <br>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function showpassword() {
+        var passid  = document.getElementById('password')
+
+        if (password.type === "password") {
+            password.type = "text"
+        } else {
+            password.type = "password"
+        }
+    }
+</script>
+</html>
