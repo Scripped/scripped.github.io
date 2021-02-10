@@ -16,7 +16,6 @@ function sendmessage() {
     setTimeout(loadbutton(), 80000);
 }
 
-
 function loadbutton() {
     document.getElementById('newbutton').style.display = "block";
 }
