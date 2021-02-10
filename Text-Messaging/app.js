@@ -51,3 +51,16 @@ function typinguser() {
 
      document.getElementById('status').innerHTML = "Typing...";
 }
+
+
+function opencontacts() {
+    document.querySelector('.contacts').classList.toggle('show');
+    document.querySelector('.messages').classList.toggle('show');
+
+    if (
+    document.getElementById('msg').innerHTML === "Contacts") {
+        document.getElementById('msg').innerHTML = "Messages"
+    } else {
+        document.getElementById('msg').innerHTML = "Contacts"
+    }
+}
