@@ -21,6 +21,7 @@ function loadbutton() {
 }
 
 function typinguser() {
+    document.getElementById('newbutton').style.display = "none"
     setTimeout(function(){ 
 
         var newdiv = document.createElement("div");
