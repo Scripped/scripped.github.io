@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #FFD966, #FF0000);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 0 4px;
+    height: 60px;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    line-height: 60px;
+    margin-block-start: 0px;
+}
+
+header h1::selection {
+    background-color: transparent;
+}
+
+::selection {
+    background-color: #FFD966;
+}
+
+img::selection {
+    background-color: transparent;
+}
+
+.contacts {
+    width: 30%;
+    border-right: 4px solid;
+    border-image: linear-gradient(#FFD966, #FF0000) 1 100%;
+    height: 100%;
+    float: left;
+    position: fixed;
+}
+
+.contacts .header {
+    background-color: #FFD966;
+    height: 60px;
+    text-align: center;
+}
+
+.contacts .header h1 {
+    margin: 0px;
+}
+
+.contacts .user:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.contacts .user {
+    padding: 10px;
+}
+
+
+.contacts .user * {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.messages {
+    width: 70%;
+    float: right;
+    height: 100%;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.messages .header {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.messages .header img {
+    transform: scale(0.8);
+}
+
+.messages .header .about h1 {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.messages .header .about p {
+    margin-block-start: 0px;
+}
+
+.messages .messagebox {
+    padding: 20px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 70%;
+}
+
+footer button {
+    background-image: url('sendicon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer * {
+    display: inline-block;
+}
+
+
+footer textarea {
+    border-radius: 60px;
+    padding-left: 24px;
+    outline: none;
+    width: 88%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+
+.user-message .sms {
+    background-color: #f0f0f0;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.user-message {
+    float: left;
+    width: 100%;
+}
+
+.user-message .sms.blocknew {
+    clear: right;
+}
+
+
+.user-message * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.your-message .sms {
+    background-color: #FFD966;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    float: right;
+    display: block;
+    clear: both;
+    margin-top: 10px;
+}
+
+.sms {
+    padding: 5px;
+}
+
+
+.your-message img {
+    display: none;
+}
+
+.messages {
+    padding-bottom: 120px;
+}
+
+header button {
+    float: right;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    display: none;
+}

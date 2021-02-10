@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Scripped</title>
+</head>
+<body>
+    <header>
+        <h1>Messages
+            <button id="newbutton" onclick="typinguser()">;)</button>
+        </h1>
+    </header>
+    <!-- CONTACTS-->
+    <main>
+    <div class="contacts">
+        <div class="header">
+            <h1>Contacts</h1>
+        </div>
+        <div class="user active">
+            <img src="profileicon.png" alt="CoolGirl432">
+            <h2>CoolGirl432</h2>
+        </div>
+        <div class="user">
+            <img src="profileicon.png" alt="CoolerGirl432">
+            <h2>CoolerGirl432</h2>
+        </div>
+    </div>
 
+    <!-- MESSAGES -->
+    <div class="messages">
+        <div class="header">
+            <img src="profileicon.png" alt="CoolGirl432">
+            <div class="about">
+                <h1>CoolGirl432</h1>
+                <p id="status">OFFLINE</p>
+            </div>
+        </div>
+        <div class="messagebox" id="messagebox">
+            <div class="user-message">
+                <img src="profileicon.png" alt="CoolGirl432">
+                <div class="sms">
+                    <h2>Hi!</h2>
+                </div>
+            </div>
+            <div class="your-message">
+                <img src="profileicon.png" alt="CoolGirl432">
+                <div class="sms">
+                    <h2>hello</h2>
+                </div>
+            </div>
+            <footer>
+                <textarea name="messagetext" id="messagetext" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px" ' placeholder="Enter message here"></textarea>
+                <button type="submit" id="messagebutton" onclick="sendmessage()"></button>
+            </footer>
+        </div>
+    </div>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
