@@ -1,0 +1,124 @@
+body {
+    background-color: #F2F2F2;
+    font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #EBEBEB;
+    width: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+    padding: 24px;
+    margin: auto;
+    top: 10px;
+    padding-top: 40px;
+    min-width: 0px;
+    font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.icon {
+    width: 40px;
+    margin: 0px auto 12px auto;
+    display: block;
+}
+
+.logtext {
+    text-align: center;
+    font-size: 24px;
+    color: #16191C;
+    margin-top: 12px;
+}
+
+.lbltext {
+    font-size: 12px;
+    color: #656B73;
+    height: 16px;
+}
+
+.login {
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    border: 1px solid#F7F7F7;
+    outline: none;
+    width: 100%;
+    display: block;
+    height: 44px;
+    transition-duration: 0.5s;
+    font-size: 20px;
+}
+
+.login:hover {
+    box-shadow: 0 0 0 1px #ffd301;
+}
+
+.login:focus {
+    border-bottom: 2px solid #FFD301;
+    background-color: #F2F2F2;
+}
+
+.login:focus:hover {
+    box-shadow: 0 0 0 0;
+}
+
+
+.login::selection {
+    background-color: #cccccc;
+    color: #16191C;
+}
+
+
+.fp {
+    color: #656B73;
+    font-size: 12px;
+    text-align: right;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.fp:hover {
+    color: #16191C;
+    border-bottom: 2px solid #FFD301;
+    padding: 10px 5px 4px;
+}
+
+.loginbutton {
+    background-color: #FFFC00;
+    color:#16191C;
+    border-radius: 360px;
+    width: 25%;
+    height: 40px;
+    margin: auto;
+    border: none;
+    outline: none;
+    display:  block;
+    cursor: pointer;
+    font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.signlogo {
+    font-size: 20px;
+    text-align: center;
+    color: #16191C;
+    font-weight: 400;
+}
+
+
+.signup {
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.signup:hover {
+    border-bottom: 2px solid #FFD301;
+    padding: 0px 2px 4px;
+}
+
+.main {
+    top: 10px;
+    padding-top: 40px;
+    min-width: 0px;
+}
