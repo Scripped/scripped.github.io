@@ -14,6 +14,7 @@ function sendmessage() {
 
     document.getElementById('messagetext').value = "";
     setTimeout(loadbutton(), 80000);
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 function loadbutton() {
