@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripped's Post| Scripped</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <input type="search" name="search" id="search">
+        <div class="profile">
+            <button draggable="false" onclick="openprofileinfo()">
+            <div class="profile-info onprofile">
+                <a href="#">Your Profile</a>
+                <a href="#">Your Posts</a>
+                <a href="#" onclick="toggledarkmode()" id="darkmodebutton">Dark Mode</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="post-info-card">
+            <div class="name-above-image">
+                <img src="scripped1.png" alt="Scripped">
+                <h3 onclick="window.open('index.html')" style="cursor: pointer;">Scripped</h3>
+            </div>
+            <div class="posts-card">
+                <h1>Thoughts?</h1>
+                <img src="post.png" alt="">
+            </div>
+        </div>
+        <div class="comments">
+            <h1>Comments:</h1>
+            <div class="comment-box">
+                <div class="comment-user">
+                    <img src="profileicon.png" alt="coolgirl432">
+                    <h2 id="username">
+                        coolgirl432
+                    </h2>
+                </div>
+                    <div class="comment">
+                        <h3>Looks good!</h3>
+                    </div>
+                    <div class="reception">
+                        <div class="response">
+                            <img src="reply.png" alt="Replies">
+                            <h3>26</h3>
+                        </div>
+                        <div class="response">
+                            <img src="like.png" onclick="like()" class="like" alt="Likes">
+                            <h3 id="likenumber">1</h3>
+                        </div>
+                    </div>
+            </div>
+            <div class="comment-box">
+                <div class="comment-user">
+                    <img src="profileicon.png" alt="coolgirl432">
+                    <h2 id="username">
+                        coolergirl432
+                    </h2>
+                </div>
+                    <div class="comment">
+                        <h3>i've seen better tbh...</h3>
+                    </div>
+                    <div class="reception">
+                        <div class="response">
+                            <img src="reply.png" alt="Replies">
+                            <h3>113</h3>
+                        </div>
+                        <div class="response">
+                            <img src="like.png" class="like" alt="Likes">
+                            <h3>1.7k</h3>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

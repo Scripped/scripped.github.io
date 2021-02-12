@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripped's Profile | Scripped</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <input type="search" name="search" id="search">
+        <div class="profile">
+            <button draggable="false" onclick="openprofileinfo()">
+            <div class="profile-info onprofile">
+                <a href="#">Your Profile</a>
+                <a href="#">Your Posts</a>
+                <a href="#" onclick="toggledarkmode()" id="darkmodebutton">Dark Mode</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="user">
+                <img src="scripped.png" alt="Scripped">
+                <div class="user-info">
+                    <h1>Scripped</h1>
+                    <h2>1.6m followers
+                    </h2>
+                    <h3>13. Aspiring web developer/designer
+                        <br> Yes, I’ve only posted once.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="posts-card">
+            <div class="post-box">
+                <h1>Posts</h1>
+                <div class="row">
+                   <div class="column">
+                       <a href="post.html">
+                           <h1>Thoughts?</h1>
+                           <img src="post.png" alt="Art">
+                       <a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
