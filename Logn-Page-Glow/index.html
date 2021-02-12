@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page | Scripped</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loginbox">
+        <h1>Login</h1>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <br>
+        <br>
+        <div class="passdiv">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <img onclick="showpass()" src="eye.png" alt="?">
+        <br>
+        <br>
+        <button id="login" type="submit">Login</button>
+        </div>
+    </div>
+</body>
+<script>
+    function showpass() {
+        passbutton = document.getElementById("password");
+        document.body.classList.toggle('showpass');
+            document.getElementById('login').classList.toggle('showpass');
+            document.getElementById('password').classList.toggle('showpass');
+            document.getElementById('username').classList.toggle('showpass');
+        if (passbutton.type === "password") {
+            passbutton.type = "text"
+        } else {
+            passbutton.type = "password"
+        }
+    }
+</script>
+</html>

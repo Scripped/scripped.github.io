@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    min-height: 100%;
+    background: linear-gradient(to right, #0060d6, #d6008b);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.loginbox {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+
+.loginbox button, .loginbox input{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.loginbox input {
+    background-color: #dddddd;
+    border: none;
+    font-size: 1.3vw;
+    outline: none;
+    height: 60px;
+    width: 60%;
+    border-radius: 1px;
+}
+
+.loginbox button {
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #4498ff, #ff3ebb);
+    color: #fff;
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.25, 2, 0.45, 0.94);
+
+}
+
+
+.loginbox button.passbutton {
+    background: #dddddd;
+    width: 80px;
+    border-radius: 0px;
+    height: 63px;
+    color: #000;
+    font-size: 3vw;
+}
+
+.loginbox button:hover {
+    background: linear-gradient(to right, #ff3ebb, #4498ff);
+    width: 30%;
+}
+
+.loginbox button.passbutton:hover {
+    background: #dddddd;
+    width: 80px;
+}
+
+.loginbox img {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    margin-left: -60px;
+    cursor: pointer;
+}
+
+body.showpass {
+    background: #000000;
+    color: #000;
+}
+
+div.passdiv input#password.showpass {
+    box-shadow: 0 0 16px 0 #ffffff;
+    background-color: #ffd620;
+}
+
+.loginbox input#username.showpass {
+    opacity: 0;
+}
+
+#login.showpass {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 700px) {
+    .loginbox {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .loginbox input {
+        font-size: 6vw;
+        width: 90%;
+    }
+}
