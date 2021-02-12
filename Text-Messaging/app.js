@@ -64,3 +64,4 @@ function opencontacts() {
         document.getElementById('msg').innerHTML = "Contacts"
     }
 }
+

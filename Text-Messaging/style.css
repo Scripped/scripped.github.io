@@ -137,6 +137,9 @@ footer * {
     display: inline-block;
 }
 
+footer {
+    margin-left: 10px;
+}
 
 footer textarea {
     border-radius: 60px;
@@ -171,6 +174,7 @@ footer textarea {
 .user-message * {
     display: inline-block;
     vertical-align: middle;
+
 }
 
 
@@ -193,11 +197,15 @@ footer textarea {
 }
 
 
+.messages {
+    margin-bottom: 130px;
+}
+
 .your-message img {
     display: none;
 }
 
-.messagebox:last-child {
+.messagebox {
     padding-bottom: 120px;
 }
 
