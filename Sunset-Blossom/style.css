@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+html, body, main {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Kalam', cursive;
+}
+
+.row {
+    clear: both;
+    content: "";
+    display: table;
+    margin: auto;
+}
+
+.column {
+    width: 33.33%;
+    display: table-cell;
+    padding: 7px;
+}
+
+#contact h3 {
+    margin-block-start: 0;
+}
+
+#contact h2 {
+    margin-block-start: 0;
+}
+
+.column img {
+    height: 450px;
+    width: 450px;
+}
+
+button {
+    font-family: 'Kalam', cursive;
+}
+
+
+.page#home {
+    background-color: lightblue;
+    text-align: center;
+    position: relative;
+}
+
+.page#home h1  {
+    font-size: 5em;
+    padding: 40px;
+    color: #fff;
+}
+.page#home img {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-shape {
+    display: table-cell;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #ffffff;
+}
+
+.nav a {
+    padding: 20px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.nav a:first-child {
+    float: left;
+}
+
+.nav a:not(:first-child) {
+    float: right;
+}
+
+#about {
+    background-color: lightpink;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    height: auto;
+}
+
+.page img {
+    padding: 0;
+}
+
+.text {
+    padding: 10px;
+}
+
+
+.page#footer {
+    height: 40%;
+    
+}
+
+.page h1 {
+    font-size: 5em;
+}
+
+.page {
+    text-align: center;
+}
+
+.page h2 {
+    font-size: 2em;
+}
+
+.contact-box {
+    height: 18rem;
+    width: 20rem;
+    border: 4px solid;
+    border: 2px solid lightpink;
+    margin: auto;
+}
+
+.contact-box button {
+    width: 50%;
+    background-color: lightpink;
+    color: #000;
+    border: none;
+    outline: none;
+    height: 4rem;
+    border-radius: 60px;
+    font-size: 2em;
+    transition: 0.5s cubic-bezier(0.165, 2, 0.44, 1);
+    cursor: pointer;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-box button:hover {
+    width: 60%;
+}
+
+#contact {
+    background-color: lightyellow;
+}
+
+.page#footer {
+    border-top: 2px solid #ccc;
+}
+
+a {
+    color: #B86FF5;
+}
+
+@media screen and (max-width: 700px) {
+
+
+.page#home h1  {
+    font-size: 4.5em;
+    padding: 0px;
+}
+
+
+.page {
+    scroll-snap-stop: normal;
+}
+
+
+.text {
+    padding: 0px;
+}
+
+.page#footer {
+    height: 40%;
+}
+
+#about .text{
+    width: 100%;
+    float: none;
+}
+
+.page h1 {
+    font-size: 4em;
+}
+
+.page {
+    text-align: center;
+}
+
+.page h2 {
+    font-size: 2em;
+}
+
+
+.page#footer {
+    border-top: none;
+}
+
+.column {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.row {
+    display: block;
+}
+
+.column img {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+}
+
+}
