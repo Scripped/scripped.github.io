@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;500&display=swap');
+
+body {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Texturina', serif;
+    background-color: #B3D5FF;
+    font-weight: 300;
+    color: #fff;
+}
+
+.title {
+    font-weight: 500;
+    text-align: center;
+}
+
+.line {
+    width: 40%;
+    height: 6px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.loginbox {
+    width: 600px;
+}
+
+
+.loginbox input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    font-family: 'Texturina', serif;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 35px 45px rgba(109, 154, 252, 0.2);
+}
+
+.loginbox input:focus {
+    background-color: #B3D5FF;
+    font-size: 2vw;
+    color: #fff;
+}
+
+
+::selection {
+    color: #B3D5FF;
+}
+
+.loginbox button {
+    border: 2px solid #fff;
+    background-color: #B3D5FF;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Texturina', serif;
+    color: #fff;
+    font-size: 1.4vw;
+    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.loginbox button:hover {
+    background-color: #fff;
+    color: #B3D5FF;
+
+}
+
+.loginbutton:hover {
+    box-shadow: 0 4px 9px rgba(109, 154, 252, 0.2);
+}
+
+.passbox {
+    display: flex;
+}
+
+.passbox button {
+    width: 10%;
+    height: 61px;
+}
