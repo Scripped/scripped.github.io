@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 body {
-    background: linear-gradient( #304adb, #ed77f0) fixed;
+    background-color: #fff;
     text-align: center;
-    font-family: 'Truculenta', sans-serif;
-    color: #fff;
-    text-shadow: 0 0 5px red;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .main h1 {
@@ -14,7 +12,7 @@ body {
 
 
 a {
-    color: #fff;
+    color: rgb(164, 171, 255);
     text-shadow: none;
 }
 @media screen and (max-width: 700px) {
