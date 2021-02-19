@@ -6,7 +6,7 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: 'Texturina', serif;
-    background-color: #B3D5FF;
+    background-color:  #df6589ff;
     font-weight: 300;
     color: #fff;
 }
@@ -42,32 +42,32 @@ body {
 }
 
 .loginbox input:focus {
-    background-color: #B3D5FF;
+    background-color:  #df6589ff;
     font-size: 2vw;
     color: #fff;
 }
 
 
 ::selection {
-    color: #B3D5FF;
+    color:  #df6589ff;
 }
 
 .loginbox button {
     border: 2px solid #fff;
-    background-color: #B3D5FF;
+    background-color: #df6589ff;
     outline: none;
     height: 50px;
     width: 100%;
     cursor: pointer;
     font-family: 'Texturina', serif;
-    color: #fff;
+    color:  #df6589ff;
     font-size: 1.4vw;
     transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .loginbox button:hover {
     background-color: #fff;
-    color: #B3D5FF;
+    color:  #df6589ff;
 
 }
 
