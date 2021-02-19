@@ -1,85 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300;500&display=swap');
 
 body {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-family: 'Texturina', serif;
-    background-color:  #df6589ff;
-    font-weight: 300;
-    color: #3c1053ff;
+	background-color: #df6589ff;
+	color: #3c1053ff;
+	font-family: 'Texturina', serif;
+	font-weight: 300;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .title {
-    font-weight: 500;
-    text-align: center;
+	font-weight: 500;
+	text-align: center;
 }
 
 .line {
-    width: 40%;
-    height: 6px;
-    background-color: #fff;
-    text-align: center;
-    border: none;
-    border-radius: 20px;
+	background-color: #fff;
+	border: none;
+	border-radius: 20px;
+	height: 6px;
+	text-align: center;
+	width: 40%;
 }
-
 
 .loginbox {
-    width: 600px;
+	width: 600px;
 }
 
-
 .loginbox input {
-    width: 100%;
-    height: 60px;
-    outline: none;
-    border: none;
-    font-family: 'Texturina', serif;
-    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 35px 45px rgba(109, 154, 252, 0.2);
+	border: none;
+	box-shadow: 0 35px 45px rgba(109, 154, 252, 0.2);
+	font-family: 'Texturina', serif;
+	height: 60px;
+	outline: none;
+	transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	width: 100%;
 }
 
 .loginbox input:focus {
-    background-color:  #df6589ff;
-    font-size: 2vw;
-    color: #3c1053ff;
+	background-color: #df6589ff;
+	color: #3c1053ff;
+	font-size: 2vw;
 }
 
-
 ::selection {
-    color:  #df6589ff;
+	color: #df6589ff;
 }
 
 .loginbox button {
-    border: 2px solid #fff;
-    background-color: #df6589ff;
-    outline: none;
+	background-color: #df6589ff;
+	border: 2px solid #fff;
+	color: #df6589ff;
+	cursor: pointer;
+	font-family: 'Texturina', serif;
+	font-size: 1.4vw;
+	transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+	width: 100%;
     height: 50px;
-    width: 100%;
-    cursor: pointer;
-    font-family: 'Texturina', serif;
-    color:  #df6589ff;
-    font-size: 1.4vw;
-    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.loginbox button:focus {
+	outline: none;
 }
 
 .loginbox button:hover {
-    background-color: #fff;
-    color:  #df6589ff;
-
+	background-color: #fff;
+	color: #df6589ff;
 }
 
 .loginbutton:hover {
-    box-shadow: 0 4px 9px rgba(109, 154, 252, 0.2);
+	box-shadow: 0 4px 9px rgba(109, 154, 252, 0.2);
 }
 
 .passbox {
-    display: flex;
+	display: flex;
 }
 
 .passbox button {
-    width: 10%;
-    height: 61px;
+	height: 61px;
+	width: 10%;
 }
