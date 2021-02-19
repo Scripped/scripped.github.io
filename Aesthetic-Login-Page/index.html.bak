@@ -11,34 +11,22 @@
         <h1>login</h1>
         <hr class="line">
     </div>
-
-        <div class="loginbox">
-            <h2>username:</h2>
-            <input type="text" placeholder="username">
-            <h2>password:</h2>
-
-            <div class="passbox">
+	
+    <div class="loginbox">
+        <h2>username:</h2>
+        <input type="text" placeholder="username">
+        <h2>password:</h2>
+        <div class="passbox">
             <input type="password" id="password" placeholder="password">
-            <button class="passbutton" onclick="showpass()">!</button>
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <button class="loginbutton">login</button>
+            <button onclick="showpass()">!</button>
         </div>
+        <br>
+        <br>
+        <br>
+        <button class="loginbutton">login</button>
+    </div>
 </body>
 
 <script>
-function showpass() {
-	var pass = document.getElementById("password");
-	
-	if (pass.type === "password") {
-		pass.type = "text";
-	} else {
-	
-	}
-}
-
 </script>
 </html>
