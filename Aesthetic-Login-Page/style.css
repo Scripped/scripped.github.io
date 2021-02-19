@@ -8,7 +8,7 @@ body {
     font-family: 'Texturina', serif;
     background-color:  #df6589ff;
     font-weight: 300;
-    color: #3c1053ff
+    color: #3c1053ff;
 }
 
 .title {
@@ -44,7 +44,7 @@ body {
 .loginbox input:focus {
     background-color:  #df6589ff;
     font-size: 2vw;
-    color: #3c1053ff
+    color: #3c1053ff;
 }
 
 
