@@ -162,5 +162,6 @@ a
 {
 	background-color: #000;
 	color: #fff;
+    cursor: pointer;
 	font-family: 'Poppins', sans-serif;
 }
