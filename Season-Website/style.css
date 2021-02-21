@@ -36,9 +36,14 @@ img::selection {
 }
 
 .sideimage img {
-    transform: scale(1.3);
+    width: 900px;
+    height: 900px;
     margin-top: 60px;
     animation: slide 2.3s forwards;
+}
+
+.sideimage img.phone {
+    display: none;
 }
 
 @keyframes slide {
@@ -81,7 +86,7 @@ img::selection {
         margin: auto;
     }
 
-    .sideimage img {
+    .sideimage img.phone {
         margin-top: 0;
         animation: none;
         transform:scale(1);
@@ -91,6 +96,10 @@ img::selection {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .sideimage img.else {
+        display: none;
     }
 
     .text {
