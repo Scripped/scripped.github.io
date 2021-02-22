@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+::selection {
+    background-color: #bdfeff;
+}
+
+html, body, main {
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: #a3d9da;
+    color: #fff;
+    padding: 10px;
+}
+
+.page#home {
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(to right, #bdfeff, white) fixed;
+}
+
+.page {
+    height: 100%;
+}
+
+
+.page#footer {
+    height: 40%;
+    border-top: #ccc 2px solid;
+}
+
+.page h1 {
+    font-size: 9em;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 120px;
+}
+
+.page h2 {
+    font-size: 3em;
+}
+
+.page#contact h3 {
+    font-size: 2em;
+}
+
+.page#contact h4, .page#contact a {
+    font-size: 1.2em;
+}
+
+.nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.nav a {
+    font-size: 2em;
+    padding: 20px;
+}
+
+.nav a:first-child {
+    float: left;
+}
+
+.nav a:not(:first-child) {
+    float: right;
+}
+
+@media screen and (max-width: 700px) {
+    .page h1 {
+        font-size: 4em;
+    }
+}
