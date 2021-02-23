@@ -65,6 +65,9 @@ a:hover {
     transition-duration: 0.5s;
 }
 
+.page#contact a:hover {
+    color: #fff;
+}
 
 .page#about {
     height: calc(100% + 320px);
