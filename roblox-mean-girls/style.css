@@ -49,14 +49,12 @@ main {
 }
 
 .back {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     height: 40px;
     width: 60px;
     font-family: inter;
-    background-color: red;
+    background-color: #fff;
     border: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     transition-duration: 0.5s;
 }
@@ -226,3 +224,34 @@ footer {
     background-color: transparent;
 }
 
+@media screen and (max-width: 700px) {
+    .header {
+        height: 190px;
+    }
+
+    .header h1 {
+        line-height: normal;
+    }
+    main {
+        margin-top: 60px;
+    }
+    .row {
+        display: block;
+    }
+    .column {
+        display: block;
+    }
+
+    .card {
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+    }
+    
+    .back {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+}
