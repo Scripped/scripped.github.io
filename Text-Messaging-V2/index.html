@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripped's Messages</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+</head>
+<body class="theme-light">
+    
+    <div class="nav">
+        <img src="icons/HamburgerIcon.png" alt="Menu" class="menu" onclick="toggleMenu()">
+        <h1>Scripped's Messages</h1>
+        <div class="theme-button">
+            <input type="checkbox" name="themebutton" id="themebutton" onclick="darkmode()"> Dark Mode
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup-info">
+            <div class="theme-button">
+                <input type="checkbox" name="themebutton" id="themebutton" onclick="darkmode()"> Dark Mode
+            </div>
+            <h1>Enter a username:</h1>
+            <input type="text" name="username" id="username" maxlength="15">
+            <span id="numbercounter">15</span>
+            <h4>This is what people will call you when you talk!</h4>
+            <button type="submit" id="setUsernameButton" onclick="checkUsername()">Done!</button>
+        </div>
+        
+    </div>
+    <main>
+        <div class="contacts">
+            <h1>Contacts</h1>
+            <div class="contact-list">
+                <!-- SINGLE CONTACT MEMBER-->
+                <div class="contact" id="redr0sesContact" onclick="redr0sesMessage()">
+                    <img src="icons/redr0sesPFP.png" alt="redr0ses" draggable="false">
+                    <h2>redr0ses</h2>
+                </div>
 
+                <!-- SINGLE CONTACT MEMBER-->
+                <div class="contact" id="fairyt4ilsContact" onclick="fairyt4ilsMessage()">
+                    <img src="icons/fairyt4ilsPFP.jpg" alt="fairyt4ils" draggable="false">
+                    <h2>fairyt4ils</h2>
+                </div>
+
+                <!-- SINGLE CONTACT MEMBER-->
+                <div class="contact" id="ellystarContact" onclick="ellystarMessage()">
+                    <img src="icons/EllyStarPFP.gif" alt="ellystar" draggable="false">
+                    <h2>ellystar</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="messages">
+            <h1>Messages</h1>
+
+            <!-- Start of redr0ses message box -->
+            <div class="message-box" id="redr0ses">
+
+                <!-- SINGLE TEXT MESSAGE -->
+                <div class="message" id="usermessage">
+                    <div class="profile-picture">
+                        <img src="icons/redr0sesPFP.png" alt="redr0ses" draggable="false">
+                    </div>
+
+                    <div class="textmessage user" id="usermessagebox">
+                        <h3 class="username-box">redr0ses</h3>
+                        <h2>Hey!</h2>
+                    </div>
+                </div>
+                <!-- END OF SINGLE TEXT MESSAGE-->
+
+                <!-- YOUR MESSAGE -->
+                <footer>
+                    <div role="textbox" contenteditable class="messageinput redr0ses" id="messageinput" >
+                    </div>
+                    <button type="submit" id="sendbutton" class="send-button" onclick="checkmessage()">
+                        <i class="material-icons">send</i>
+                    </button>
+                </footer>
+                <!-- END OF YOUR MESSAGE-->
+
+            </div>
+            <!-- End of redr0ses message box -->
+
+
+            <!-- Start of fairyt4ils message box -->
+            <div class="message-box" id="fairyt4ils">
+                <div class="message" id="usermessage">
+                        <div class="profile-picture">
+                            <img src="icons/fairyt4ilsPFP.jpg" alt="fairyt4ils" draggable="false">
+                            
+                        </div>
+
+                    <div class="textmessage user" id="usermessagebox">
+                        <h3 class="username-box">fairyt4ils</h3>
+                        <h2>Hi, 
+                        <span class="usernameVal"></span>! </h2>
+                    </div>
+                </div>
+                <footer>
+                    <div role="textbox" contenteditable class="messageinput fairyt4ils" id="messageinput" >
+                    </div>
+                    <button type="submit" class="send-button" onclick="checkmessage()">
+                        <i class="material-icons">send</i>
+                    </button>
+                </footer>
+            </div>
+            <!-- End of fairyt4ils message box -->
+
+
+            <!-- Start of ellystar message box -->
+            <div class="message-box" id="ellystar">
+                <div class="message" id="usermessage">
+                    <div class="profile-picture">
+                        <img src="icons/EllyStarPFP.gif" alt="EllyStar" draggable="false">
+                    </div>
+
+                    <div class="textmessage user" id="usermessagebox">
+                        <h3 class="username-box">ellystar</h3>
+                        <h2>Good <span id="TimeOfDay"></span>, <span class="usernameVal"></span>.</h2>
+                    </div>
+                </div>
+
+                <footer>
+                    <div role="textbox" contenteditable class="messageinput ellystar" id="messageinput" >
+                    </div>
+                    <button type="submit" class="send-button" onclick="checkmessage()">
+                        <i class="material-icons">send</i>
+                    </button>
+                </footer>
+            </div>
+            <!-- End of ellystar message box -->
+
+        </div>
+
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
