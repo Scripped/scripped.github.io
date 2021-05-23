@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+    --colour-theme: #85c8ff;
+    --link-text: #41aaff;
+    --font-primary: 'Poppins', sans-serif;;
+}
+
+.show {
+    display: block !important;
+}
+
+html, body, main {
+    margin: 0;
+    background-color: #fafafa;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+body {
+    padding: 4px;
+}
+
+.nav button {
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main img {
+    margin: auto;
+    display: block;
+}
+
+.notification-list {
+    background-color: #fff;
+    box-shadow: 0 0 12px 1px rgba(0,0,0,0.13);
+    width: 500px;
+    float: right;
+    z-index: 5;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 60px;
+}
+
+.notification-item {
+    border-bottom: 2px solid var(--colour-theme);
+    font-weight: 200;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.notification-item:hover {
+    background-color: #fafafa;
+}
+
+.notification-info {
+    display: flex;
+    padding: 20px;
+}
+
+.notification-item h4 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.notification-item img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+span.link {
+    color: var(--colour-theme);
+    font-weight: 400;
+}
+
+
+.notification-item p {
+    margin: 0;
+    margin-top: -10px;
+    padding: 10px;
+    margin-left: 40px;
+    border-left: 5px solid var(--colour-theme);
+    background-color: #fbfbfb;
+    width: 120px;
+    margin-bottom: 6px;
+}
+
+li {
+    list-style: none;
+}
