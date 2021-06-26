@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik&display=swap');
+
+/* 
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik', sans-serif;
+*/
+
+:root {
+    --theme-color: #6dddff;
+    --user-color: #ff6df8;
+}
+
+.no-flex {
+    flex: 0 !important;
+}
+
+.load {
+    display: block !important;
+}
+
+
+.you {
+    --color: var(--theme-color);
+}
+
+.user {
+    --color: var(--user-color);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+::selection {
+    background-color: #6dddff80;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 90vh;
+    overflow: hidden;
+}
+
+.loadingScreen {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.loadingScreen .loading-contain {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.loadingScreen .loader {
+    height: 120px;
+    width: 120px;
+    border: 12px solid #ddd;
+    border-top: 12px solid var(--theme-color) !important;
+    animation: linear infinite 1.6s load;
+    border-radius: 50%;
+    
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    padding: 20px 0;
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    user-select: none;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+main {
+    background-color: #fafafa;
+    display: flex;
+    margin-top: 90px;
+    height: 80%;
+}
+
+main .videos {
+    flex: 50%;
+    float: left;
+    padding: 10px;
+    transition-duration: 0.2s;
+}
+
+
+main .user, main .you {
+    width: 100%;
+    height:50%;
+}
+
+main .videos h2 {
+    margin: 0;
+}
+
+main .video {
+    height: 80%;
+    background-color: var(--color);
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    user-select: none;
+}
+
+
+main .video .name {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+main .video .name h1 {
+    margin: 0;
+}
+
+main .chat {
+    flex: 50%;
+    float: right;
+    border-left: 2px solid var(--theme-color);
+    padding: 10px;
+    overflow: scroll;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+main .chat::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+main .chat::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    width: 15px;
+    border-radius: 10px;
+}
+
+main .chat button {
+    float: right;
+}
+
+main .chatBox {
+    margin-left: 0px;
+    min-height: 100%;
+}
+
+
+main .chatBox h2 {
+    margin-top: 5px;
+}
+
+main .chatBox hr {
+    border: 1px solid var(--theme-color);
+}
+
+main .chatBox .userInfo * {
+    margin: 0;
+}
+
+main .chatBox .details {
+    margin-top: 20px;
+    display: flex;
+}
+
+main .chatBox .details h5 {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+main .chatBox .message p {
+    margin: 0;
+    margin-top: -15px;
+    margin-left: 35px;
+}
+
+main .chatBox .message .Image {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color);
+    position: relative;
+}
+
+
+main .chatBox .message .Image p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    text-align: center;
+}
+
+
+main .chat .message-box {
+    position: sticky;
+    bottom: 0;
+    border: 2px solid var(--theme-color);
+    background-color: #fff;
+    margin-left: 5px;
+    margin-top: 30px;
+
+}
+
+main .chat .message-box .messageContent {
+    padding: 10px;
+    outline: none;
+    width: 90%;
+    left: 0;
+}
+
+main .chat .message-box .sendButton {
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
