@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <audio src="7am.mp3"></audio>
+    <audio src="clicksound.wav" class="clicksound"></audio>
+    <audio src="success.wav" class="successSound"></audio>
+    
+
+    <div class="credits">
+        <div class="credit-info">
+            <h1>Thanks for playing, come again soon!</h1>
+            <div class="btns">
+                <button onclick="location.reload()">Play Again</button>
+                <button class="wacky-button">Click me!</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="mouse"></div>
+
+    <div class="computer">
+        <div class="stand"></div>
+
+        <div class="computer-content">
+            <div class="nav">
+                <p class="link">
+                    Home
+                </p>
+                <div class="search">
+                    <p>Search here...</p>
+                </div>
+                <p class="link">
+                    Explore
+                </p>
+                <p class="link">
+                    <i class="material-icons">account_circle</i>
+                </p>
+            </div>
+            <div class="pages">
+                <div class="editor-page">
+                    <div class="video">
+                        <div class="thumbnail">
+                            <div class="sprite"></div>
+                        </div>
+                        <button class="post-button" onclick="saveVideo()" disabled>
+                            <p>Post</p>
+                        </button>
+                    </div>
+                    
+                    <div class="video-details">
+                        <!-- <div class="video-name-box">
+                            <h5 class="video-name">
+                                Your awesome video.
+                            </h5>
+                        </div> -->
+                        <div class="video-name-box">
+                            <h5>Title:</h5>
+                            <input type="text" name="video-name" contenteditable="false"
+                             id="videoname" class="video-name" maxlength="30" value="Your awesome video">
+                        </div>
+                            <h5>Description:</h5>
+                        <div class="video-description">
+                            <p>
+                                This is my video. 
+                                I hope everyone likes it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="video-page">
+                    <div class="video">
+                        <div class="thumbnail">
+                            <div class="sprite"></div>
+                        </div>
+                        <div class="videoInfo">
+                            <h3 class="video-name"></h3>
+                            <div class="video-description">
+                                <p>
+                                    This is my video. 
+                                    I hope everyone likes it.
+                                </p>
+                            </div>
+
+                            <div class="reactions">
+                                <h4>
+                                    <span class="viewNumber">0</span> Views
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading-page">
+                    <div class="loader"></div>
+                    <h5>Loading...</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="background">
+
+        <div class="window"></div>
+        <div class="plant">
+            <i class="material-icons">
+                local_florist
+            </i>
+        </div>
+        <div class="plant-shadow">
+            <i class="material-icons">
+                local_florist
+            </i>
+        </div>
+    </div>
+
+    <main>
+        <div class="title">
+            <button class="start-button" onclick="startGame()">
+                <h2>Start</h2>
+            </button>
+        </div>
+        <div class="tips">
+            <div class="tip" id="tip">
+                <h1 class="tipText">Welcome to Video Show!</h1>
+                <button class="next-button" onclick="nextTip(this)">
+                    <h2>Next <i class="material-icons">arrow_forward_ios</i></h2>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="app.js"></script>
+</html>
