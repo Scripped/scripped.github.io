@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>AnonyMeet</title>
+</head>
+<body>
+
+    <div class="loadingScreen">
+        <div class="loading-contain">
+            <div class="loader"></div>
+            <p>Finding a user...</p>
+        </div>
+    </div>
+
+    <header>
+        <h1>AnonyMeet <i class="material-icons">record_voice_over</i> </h1>
+    </header>
+
+    <main>
+        <div class="videos">
+            <div class="user">
+                <h2>AnonyUser</h2>
+                <div class="user video" id="userVideo">
+                    <div class="user name">
+                        <h1 class="userFace">😄</h1>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="you">
+                <h2>You</h2>
+                <div class="you video">
+                    <div class="user name">
+                        <h1>You</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="chatBox">
+                <div class="header">
+                    <h2>Chat</h2>
+                    <button class="zoomIn" onclick="zoomChat()">
+                        <i class="material-icons">
+                            zoom_out_map
+                        </i>
+                    </button>
+                </div>
+                
+                <div class="userInfo">
+                    <h4>Info: </h4>
+                    <h5>This user is from <span class="country">[HIDDEN]</span> </h5> 
+                </div>
+                
+                <div class="messages">
+                    <!-- <div class="userMessage message">
+                        <div class="user details">
+                            <div class="user Image"></div>
+                            <h5>AnonyUser</h5>
+                        </div>
+                        <p class="text">Hi.</p>
+                    </div>
+    
+                    <div class="yourMessage message">
+                        <div class="you details">
+                            <div class="you Image">
+                                <p>
+                                    Y
+                                </p>
+                            </div>
+                            <h5>You</h5>
+                        </div>
+                        <p class="yourText">Hello.</p>
+                    </div> -->
+                </div>
+
+                
+
+            </div>
+            <div class="message-box">
+                <div class="messageContent" role="textbox" contenteditable></div>
+                <button onclick="checkMessage()" class="sendButton"> <i class="material-icons">send</i> </button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="settings">
+            <button class="skipUser" onclick="load()">
+                <h2>Skip</h2>
+            </button>
+        </div>
+
+    </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
