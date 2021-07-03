@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+::selection {
+    background-color: #ff648b;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+    text-align: center;
+}
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 9px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.card input {
+    border: 2px solid #ff648b;
+    padding: 20px;
+    font-size: 1.3em;
+    width: 100%;
+    outline: none;
+}
+
+.imageContainer {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+button.download {
+    height: 70px;
+    width: 100%;
+    background-color: #ff648b;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.165, 2, 0.44, 1);
+}
+
+button.download:hover {
+    box-shadow: 0 0 9px 0 rgba(0,0,0,0.2);
+    font-size: 1.4em;
+    height: 80px;
+}
+
