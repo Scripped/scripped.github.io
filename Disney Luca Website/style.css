@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+
+.hide {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Risque', cursive;
+}
+
+img {
+    user-select: none;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 10px;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    z-index: 4;
+}
+
+header img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+main {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nextButton {
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    right: 0;
+    margin-right: 6px;
+    z-index: 3;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.prevButton {
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    left: 0;
+    margin-left: 6px;
+    z-index: 3;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.section {
+    margin-top: 90px;
+    position: relative;
+    height: 100%;
+    transition-duration: 0.7s;
+}
+
+.text {
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+@keyframes slideIn {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 80px;
+    }
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sky {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a8eeff;
+}
+
+.sand {
+    bottom: 0;
+    position: absolute;
+    background-color: #ffe49a;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+#page1 .image {
+    margin-left: 50px;
+    animation-name: ride;
+    animation-duration: 0.9s;
+}
+
+@keyframes ride {
+    0% {
+        margin-left: -90px;
+    }
+    50% {
+        margin-left: 60px;
+    }
+}
+
+/* 
+#page1 .image img {
+    height: 500px;
+}
+ */
+
+#page1 .text {
+    margin-left: -120px;
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+.text {
+    z-index: 3;
+}
+
+.text h1 {
+    font-size: 3em;
+}
+
+.text p {
+    font-size: 2em;
+}
+
+
+.background .sandSea {
+    background: linear-gradient(
+        to right,
+        #ffe49a 60%,
+        #769aff
+    );
+
+    bottom: 0;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#page2 .text {
+    margin-left: 50px;
+}
+
+
+#page2 .image {
+    margin-left: -120px;
+    width: 50%;
+    margin-top: 20px;
+    animation-name: run;
+    animation-duration: 1s;
+}
+
+@keyframes run {
+    0% {
+        margin-left: -500px;
+    }
+    50% {
+        margin-left: -110px;
+    }
+}
+
+#page3 .image {
+    animation-name: swim;
+    animation-duration: 1s;
+}
+
+@keyframes swim {
+    0% {
+        margin-top: 100px;
+    }
+    50% {
+        margin-top: -10px;
+    }
+}
+
+
+.background .sea {
+    background-color: #769aff;
+
+    bottom: 0;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+}
+
+.section footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.section footer a {
+    color: #ff4242;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+.section footer h3 {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .hide {
+        display: block;
+    }
+
+    header {
+        height: 60px;
+    }
+
+
+    main {
+        padding: 0px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .nextButton {
+        display: none;
+    }
+
+    .prevButton {
+        display: none;
+    }
+
+    .section {
+        box-shadow: inset 0 0 9px 0 rgba(0,0,0,0.2);
+    }
+
+    .content {
+        display: block;
+        height: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #page1 .image {
+        display: none;
+    }
+
+    #page1 .text {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .text {
+        z-index: 3;
+    }
+
+    .text h1 {
+        font-size: 3em;
+    }
+
+    .text p {
+        font-size: 2em;
+    }
+
+
+    .background .sandSea {
+        background: linear-gradient(
+            to right,
+            #ffe49a 60%,
+            #769aff
+        );
+
+        bottom: 0;
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        z-index: -1;
+    }
+
+
+    #page2 .text {
+        margin-left: 0px;
+    }
+
+
+    #page2 .image {
+        display: none;
+        animation-name: run;
+        animation-duration: 1s;
+    }
+
+
+    #page3 .image {
+        display: none;
+        animation-name: swim;
+        animation-duration: 1s;
+    }
+
+    .background .sea {
+        background-color: #769aff;
+
+        bottom: 0;
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
