@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(#c70303, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow:  0 0 13px 1px rgba(0,0,0,0.2);
+    height: 700px;
+    width: 40%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.card img {
+    border-radius: 5px;
+}
+
+.card h6 {
+    color: #838383;
+    margin: 0;
+}
+
+
+.row {
+    background-color: #fafafa;
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #fafafa;
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
