@@ -13,7 +13,7 @@ function getAge(DOB) {
     var now = new Date();
     var DOB = DOB.replace(/\//g, ',');
     var DOB = DOB.split(',');
-    var DOB = [DOB[0], DOB[1], DOB[2]] = [DOB[1], DOB[0], DOB[2]];
+    var DOB = [DOB[0], DOB[1], DOB[2]];
     var birthDay = new Date(DOB);
     var age = now.getFullYear() - birthDay.getFullYear();
     var m = now.getMonth() - birthDay.getMonth();
