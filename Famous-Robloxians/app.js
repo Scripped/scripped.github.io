@@ -1,3 +1,5 @@
+window.location.replace("https://famous-robloxians.github.io/");
+
 function hidePopup(item) {
     item.parentNode.remove();
 }
@@ -16,3 +18,4 @@ document.getElementById('searchInput').addEventListener("keypress", function onE
         document.querySelector(".searchButton").click();
     }
 });
+
