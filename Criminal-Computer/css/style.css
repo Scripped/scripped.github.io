@@ -1,0 +1,397 @@
+main, chrome, header {
+    user-select: none;
+}
+
+.material-icons {
+    font-size: initial;
+}
+
+.material-icons-outlined {
+    font-size: initial;
+}
+.hide {
+    display: none;
+    user-select: none;
+}
+
+.notepad.maximise {
+    height: 100% !important;
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.maximise {
+    position: absolute;
+}
+
+
+.start {
+    display: none;
+}
+
+
+.maximise textarea {
+    height: calc(100% - 80px) !important;
+    width: 100% !important;
+}
+
+* {
+    margin:  0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+main {
+    display: block;
+}
+
+
+
+
+chrome {
+    background-color: #35363a;
+    width: 100%;
+    display: block;
+    color: #fff;
+    z-index: 20;
+}
+
+chrome header {
+    padding: 0px;
+}
+
+chrome .tabs {
+    display: flex;
+    width: 100%;
+}
+
+chrome .tab {
+    width: 20%;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 5px;
+}
+
+
+chrome .current {
+    background-color: #35363a;
+}
+
+chrome .tab img {
+    height:20px;
+    width: 20px;
+}
+
+chrome .tab p {
+    margin-left: 6px;
+}
+
+chrome .tab  i {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+}
+
+chrome .nav {
+    display: flex;
+    align-items: center;
+    background-color: #35363a;
+    padding: 2px 10px;
+}
+
+chrome .nav i {
+    font-size: 1.4em;
+    margin-right: 9px;
+    cursor: pointer;
+
+}
+
+chrome .nav i:nth-child(2) {
+    color:#87888c;
+    cursor: default;
+}
+
+chrome .nav .search {
+    background-color: #202125;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+chrome .nav .search i {
+    color: #a0a3a8;
+    font-size: 1.2em;
+
+}
+
+chrome .nav .search span {
+    color: #ccc;
+}
+
+chrome .nav .incognito {
+    display: flex;
+    align-items: center;
+    background-color: #202125;
+    padding: 4px;
+    border-radius: 20px;
+    border: 1px solid #535353;
+}
+
+chrome .nav .incognito img {
+    height: 25px;
+    width: 25px;
+}
+
+
+webpage {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 20;
+}
+
+webpage .main {
+    width: 60%;
+    padding: 40px 0;
+}
+
+webpage .main > img {
+    width: 55%;
+}
+
+webpage .main h1 {
+    font-size: 3em;
+}
+
+webpage .author {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+webpage .author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+webpage h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+webpage h4 {
+    font-weight: 200;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+}
+
+.taskbar {
+    width: 100%;
+    background-color: #0c0e2b;
+    bottom: 0;
+    position: absolute;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    z-index: 99999;
+}
+
+.taskbar div:first-child {
+    color: #fff;
+    font-size: 2em !important;
+    margin-left: 5px;
+}
+
+.taskbar .searchBar {
+    width: 25.2%;
+    height: 100%;
+    border: 0.2px solid #ffffff4d;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #1b2175;
+    cursor: text;
+}
+
+.taskbar .searchBar i {
+    font-size: 1.7em;
+    font-weight: 100;
+    color: #fff;
+}
+
+.taskbar .searchBar:hover {
+    background-color: rgb(54, 59, 128);
+    border: 0.4px solid #ffffffc7;
+}
+
+.taskbar .searchBar p {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.taskbar .apps {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+} 
+
+.taskbar .apps button {
+    height: 100%;
+    cursor: pointer;
+    border-bottom: 3px solid #99b4ff !important;
+    padding: 3px;
+    width: 50px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.taskbar .apps button:hover {
+    background-color: #191f74;
+    transition-duration: 0.2s;
+}
+
+.taskbar .apps button:nth-child(1) {
+    background-image: url(../icons/taskbar/file-explorer.png);
+}
+.taskbar .apps button:nth-child(2) {
+    background-image: url(../icons/taskbar/chrome.png);
+
+}
+.taskbar .apps button:nth-child(3) {
+    background-image: url(../icons/taskbar/notepad.png);
+}
+
+
+.desktop {
+    position:relative; 
+    z-index: -200;
+}
+
+.desktop button{
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    border: none;
+    outline: none;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.desktop button:nth-child(1) {
+    background-image: url(../icons/taskbar/recycle-bin.JPG);
+    left: 40px;
+    top: 129px;
+}
+.desktop button:nth-child(2) {
+    background-image: url(../icons/taskbar/chrome.png);
+    left: 240px;
+    top: 29px;
+    width: 50px;
+    height: 50px;
+}
+.desktop button:nth-child(3) {
+    background-image: url(../icons/taskbar/notepad.png);
+    left: 240px;
+    top: 229px;
+    width: 50px;
+    height: 50px;
+}
+
+.taskbar .info .td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskbar .info {
+    right: 0;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.taskbar .info * {
+    margin-right: 10px;
+}
+
+.taskbar .info i {
+    font-size: 1.6em;
+    color: #ffffff8c;
+    cursor: pointer;
+}
+
+.taskbar .info i:hover {
+    background-color: #191f74;
+}
+
+
+/* APPS */
+.notepad {
+    position: absolute;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+    width: min-content;
+    top: 94px; left: 358px;
+}
+
+header{
+    background-color: #191f74;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .settings {
+    display: flex;
+    align-items: center;
+}
+
+header .settings button {
+
+    background-color: transparent;
+    color: #fff;
+    padding: 6px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.notepad textarea{
+    font-size: 1.2em;
+    min-width: min-content;
+    border: 1px solid #191f74;
+    outline: none;
+    padding: 3px;
+    height: 220px;
+    width: 294px;
+}
+

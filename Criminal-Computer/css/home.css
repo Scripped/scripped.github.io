@@ -1,0 +1,74 @@
+* {
+    margin:  0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+main {
+    display: none;
+}
+
+
+.desktop {
+    display: none;
+}
+
+.notepad {
+    display: none;
+}
+
+chrome {
+    display: none;
+}
+
+webpage {
+    display: none;
+}
+
+.dark {
+    background-color: #000;
+    color: red;
+}
+
+h1 {
+    transform: rotate(1deg);
+    text-transform: uppercase;
+    text-shadow: 0 0 8px red;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+    transform: rotate(352deg);
+    text-transform: uppercase;
+    text-shadow: 0 0 4px red;
+    text-align: right;
+}
+
+button {
+    background-color: white;
+    border: 3px solid red;
+    padding: 4px;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 1.3em;
+    position: absolute;
+    right: 0;
+    transition-duration: 0.5s;
+}
+
+
+button:hover {
+    background-color:red;
+}
